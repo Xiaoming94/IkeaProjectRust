@@ -1,4 +1,5 @@
 use crate::warehouse;
+use crate::warehouse::ShipmentType;
 
 pub struct Customer {
     m_name: String,
