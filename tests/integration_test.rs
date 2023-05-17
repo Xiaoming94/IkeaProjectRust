@@ -29,9 +29,9 @@ fn create_customer() {
     customer::create_customer(name);
 }
 
-//#[test]
-//fn customer_send_request() {
-//    let m_customer = customer::create_customer(String::from("Xiaoming"));
-//    let m_warehouse = warehouse::create_warehouse(String::from(my warehouse));
-//    customer_send_request(m_customer, m_warehouse);
-//}
+#[test]
+fn customer_send_request() {
+    let m_customer = customer::create_customer(String::from("Xiaoming"));
+    let m_warehouse = warehouse::create_warehouse(String::from("my warehouse"));
+    customer::customer_send_request(m_customer, m_warehouse);
+}
